@@ -1,0 +1,568 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='data_cleaned' inline='true' name='federated.1iz3d6j0gcn57q1beifde1qzq33u' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_cleaned' name='textscan.16hnq8606kxjn211526cs1v5bej7'>
+            <connection class='textscan' directory='C:/Users/agmil/Documents/UT_DnA_Bootcamp/Project 4/project-4-fake-news' filename='data_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.16hnq8606kxjn211526cs1v5bej7' name='data_cleaned.csv' table='[data_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='title' ordinal='0' />
+            <column datatype='string' name='text' ordinal='1' />
+            <column datatype='string' name='subject' ordinal='2' />
+            <column datatype='date' name='date' ordinal='3' />
+            <column datatype='integer' name='real' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[data_cleaned.csv_62778701B64F4498BEA719846011A162]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[text]</local-name>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias>text</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[data_cleaned.csv_62778701B64F4498BEA719846011A162]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subject</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[subject]</local-name>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias>subject</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[data_cleaned.csv_62778701B64F4498BEA719846011A162]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_cleaned.csv_62778701B64F4498BEA719846011A162]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>real</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[real]</local-name>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias>real</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_cleaned.csv_62778701B64F4498BEA719846011A162]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Article Type' datatype='string' name='[Calculation_2733685028119281664]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [real] = 0 THEN &apos;Fake&apos;&#13;&#10;ELSE &apos;Real&apos;&#13;&#10;END' />
+      </column>
+      <column caption='data_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[data_cleaned.csv_62778701B64F4498BEA719846011A162]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Real' datatype='integer' name='[real]' role='measure' type='quantitative' />
+      <column caption='Subject' datatype='string' name='[subject]' role='dimension' type='nominal' />
+      <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column-instance column='[subject]' derivation='None' name='[none:subject:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/agmil/AppData/Local/Temp/TableauTemp/#TableauTemp_1b11sak0xl5kg5157ufjf1kq4mk2.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/07/2025 01:36:09 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>0</ordinal>
+              <family>data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>42452</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[data_cleaned.csv_62778701B64F4498BEA719846011A162]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>text</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[text]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>text</remote-alias>
+              <ordinal>1</ordinal>
+              <family>data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>39745</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[data_cleaned.csv_62778701B64F4498BEA719846011A162]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subject</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subject]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subject</remote-alias>
+              <ordinal>2</ordinal>
+              <family>data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[data_cleaned.csv_62778701B64F4498BEA719846011A162]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>data_cleaned.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>2202</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_cleaned.csv_62778701B64F4498BEA719846011A162]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>real</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[real]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>real</remote-alias>
+              <ordinal>4</ordinal>
+              <family>data_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_cleaned.csv_62778701B64F4498BEA719846011A162]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:subject:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;worldnews&quot;</bucket>
+            </map>
+            <map to='#3b6996'>
+              <bucket>&quot;US_News&quot;</bucket>
+            </map>
+            <map to='#4a7ba9'>
+              <bucket>&quot;politicsNews&quot;</bucket>
+            </map>
+            <map to='#5d8eb9'>
+              <bucket>&quot;politics&quot;</bucket>
+            </map>
+            <map to='#71a2c8'>
+              <bucket>&quot;News&quot;</bucket>
+            </map>
+            <map to='#85b5d8'>
+              <bucket>&quot;Middle-east&quot;</bucket>
+            </map>
+            <map to='#9ecae6'>
+              <bucket>&quot;left-news&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;Government News&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='title' />
+        <field-sort-custom-order field='text' />
+        <field-sort-custom-order field='subject' />
+        <field-sort-custom-order field='date' />
+        <field-sort-custom-order field='real' />
+        <field-sort-custom-order field='Calculation_2733685028119281664' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='data_cleaned.csv' id='data_cleaned.csv_62778701B64F4498BEA719846011A162'>
+            <properties context=''>
+              <relation connection='textscan.16hnq8606kxjn211526cs1v5bej7' name='data_cleaned.csv' table='[data_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='title' ordinal='0' />
+                  <column datatype='string' name='text' ordinal='1' />
+                  <column datatype='string' name='subject' ordinal='2' />
+                  <column datatype='date' name='date' ordinal='3' />
+                  <column datatype='integer' name='real' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Distribution of Real and Fake Data'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_cleaned' name='federated.1iz3d6j0gcn57q1beifde1qzq33u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1iz3d6j0gcn57q1beifde1qzq33u'>
+            <column caption='Article Type' datatype='string' name='[Calculation_2733685028119281664]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [real] = 0 THEN &apos;Fake&apos;&#13;&#10;ELSE &apos;Real&apos;&#13;&#10;END' />
+            </column>
+            <column-instance column='[__tableau_internal_object_id__].[data_cleaned.csv_62778701B64F4498BEA719846011A162]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' pivot='key' type='quantitative' />
+            <column caption='data_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[data_cleaned.csv_62778701B64F4498BEA719846011A162]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_2733685028119281664]' derivation='None' name='[none:Calculation_2733685028119281664:nk]' pivot='key' type='nominal' />
+            <column-instance column='[subject]' derivation='None' name='[none:subject:nk]' pivot='key' type='nominal' />
+            <column caption='Real' datatype='integer' name='[real]' role='measure' type='quantitative' />
+            <column caption='Subject' datatype='string' name='[subject]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='1' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='1' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]' value='149' />
+            <format attr='font-size' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' value='12' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]' value='12' />
+            <format attr='color' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Article Type:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Articles:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:subject:nk]' />
+              <text column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Article Type:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Articles:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Article Type:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Articles:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk] + [federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk])</rows>
+        <cols>[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]</cols>
+      </table>
+      <simple-id uuid='{33D174EB-62D9-4DE6-AC97-B9DE8B3ECACB}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Distribution of Real and Fake Data'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='238'>
+            <card pane-specification-id='1' param='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:subject:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]</field>
+            <field>[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:subject:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C95406B2-39C0-487A-BDDD-0DC1ECE20B24}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Distribution of Real and Fake Data' width='192'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

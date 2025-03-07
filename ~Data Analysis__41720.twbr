@@ -1,0 +1,1204 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Project4DataAnalysis_17413167569810' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='data_cleaned' inline='true' name='federated.1iz3d6j0gcn57q1beifde1qzq33u' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_cleaned' name='textscan.16hnq8606kxjn211526cs1v5bej7'>
+            <connection class='textscan' directory='C:/Users/agmil/Documents/UT_DnA_Bootcamp/Project 4/project-4-fake-news' filename='data_cleaned.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.16hnq8606kxjn211526cs1v5bej7' name='data_cleaned.csv' table='[data_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='title' ordinal='0' />
+            <column datatype='string' name='text' ordinal='1' />
+            <column datatype='string' name='subject' ordinal='2' />
+            <column datatype='date' name='date' ordinal='3' />
+            <column datatype='integer' name='real' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[data_cleaned.csv_62778701B64F4498BEA719846011A162]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[text]</local-name>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias>text</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[data_cleaned.csv_62778701B64F4498BEA719846011A162]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subject</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[subject]</local-name>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias>subject</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[data_cleaned.csv_62778701B64F4498BEA719846011A162]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_cleaned.csv_62778701B64F4498BEA719846011A162]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>real</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[real]</local-name>
+            <parent-name>[data_cleaned.csv]</parent-name>
+            <remote-alias>real</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_cleaned.csv_62778701B64F4498BEA719846011A162]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='# of Real Articles' datatype='integer' name='[# of Fake Articles (copy)_2935784061414301698]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [real] = 1 THEN [text] END)' />
+      </column>
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1iz3d6j0gcn57q1beifde1qzq33u].[usr:\# of Fake Articles (copy)_2935784061414301698:qk]&quot;' value='Real Articles' />
+          <alias key='&quot;[federated.1iz3d6j0gcn57q1beifde1qzq33u].[usr:Calculation_2935784061413048320:qk]&quot;' value='Fake Articles' />
+        </aliases>
+      </column>
+      <column caption='Article Type' datatype='string' name='[Calculation_2733685028119281664]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [real] = 0 THEN &apos;Fake&apos;&#13;&#10;ELSE &apos;Real&apos;&#13;&#10;END' />
+      </column>
+      <column caption='Topic' datatype='string' name='[Calculation_2733685028123680769]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [subject]&#13;&#10;    WHEN &apos;Government News&apos; THEN &apos;Government&apos;&#13;&#10;    WHEN &apos;left-news&apos; THEN &apos;Left News&apos;&#13;&#10;    WHEN &apos;Middle-east&apos; THEN &apos;Middle East&apos;&#13;&#10;    WHEN &apos;politics&apos; THEN &apos;Politics&apos;&#13;&#10;    WHEN &apos;politicsNews&apos; THEN &apos;Politics&apos;&#13;&#10;    WHEN &apos;US_News&apos; THEN &apos;US News&apos;&#13;&#10;    WHEN  &apos;worldnews&apos; THEN &apos;World News&apos;&#13;&#10;    ELSE &apos;Other News&apos;&#13;&#10;END' />
+      </column>
+      <column caption='# of Fake Articles' datatype='integer' name='[Calculation_2935784061413048320]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [real] = 0 THEN [text] END)' />
+      </column>
+      <column caption='data_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[data_cleaned.csv_62778701B64F4498BEA719846011A162]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Real' datatype='integer' name='[real]' role='measure' type='quantitative' />
+      <column caption='Subject' datatype='string' name='[subject]' role='dimension' type='nominal' />
+      <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_2733685028123680769]' derivation='None' name='[none:Calculation_2733685028123680769:nk]' pivot='key' type='nominal' />
+      <column-instance column='[subject]' derivation='None' name='[none:subject:nk]' pivot='key' type='nominal' />
+      <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[# of Fake Articles (copy)_2935784061414301698]' derivation='User' name='[usr:# of Fake Articles (copy)_2935784061414301698:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_2935784061413048320]' derivation='User' name='[usr:Calculation_2935784061413048320:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Article Type,Topic)' hidden='true' name='[Action (Article Type,Topic)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_2733685028119281664]' />
+          <groupfilter function='level-members' level='[Calculation_2733685028123680769]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (MONTH(Date))' hidden='true' name='[Action (MONTH(Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tmn:date:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_09pugd21rxsbak1ef2w2b0ryuvfc.hyper' default-settings='yes' schema='Extract' sslmode='' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>0</ordinal>
+              <family>data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>38628</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>text</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[text]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>text</remote-alias>
+              <ordinal>1</ordinal>
+              <family>data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>38628</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subject</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subject]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subject</remote-alias>
+              <ordinal>2</ordinal>
+              <family>data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>data_cleaned.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1850</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>real</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[real]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>real</remote-alias>
+              <ordinal>4</ordinal>
+              <family>data_cleaned.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:subject:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;worldnews&quot;</bucket>
+            </map>
+            <map to='#3b6996'>
+              <bucket>&quot;US_News&quot;</bucket>
+            </map>
+            <map to='#4a7ba9'>
+              <bucket>&quot;politicsNews&quot;</bucket>
+            </map>
+            <map to='#5d8eb9'>
+              <bucket>&quot;politics&quot;</bucket>
+            </map>
+            <map to='#71a2c8'>
+              <bucket>&quot;News&quot;</bucket>
+            </map>
+            <map to='#85b5d8'>
+              <bucket>&quot;Middle-east&quot;</bucket>
+            </map>
+            <map to='#9ecae6'>
+              <bucket>&quot;left-news&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;Government News&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_2733685028123680769:nk]' palette='color_blind_10_0' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;Government&quot;</bucket>
+            </map>
+            <map to='#57606c'>
+              <bucket>&quot;Other News&quot;</bucket>
+            </map>
+            <map to='#5fa2ce'>
+              <bucket>&quot;Politics&quot;</bucket>
+            </map>
+            <map to='#7b848f'>
+              <bucket>&quot;World News&quot;</bucket>
+            </map>
+            <map to='#a3acb9'>
+              <bucket>&quot;Middle East&quot;</bucket>
+            </map>
+            <map to='#c85200'>
+              <bucket>&quot;US News&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;Left News&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='title' />
+        <field-sort-custom-order field='text' />
+        <field-sort-custom-order field='subject' />
+        <field-sort-custom-order field='Calculation_2733685028123680769' />
+        <field-sort-custom-order field='date' />
+        <field-sort-custom-order field='real' />
+        <field-sort-custom-order field='Calculation_2733685028119281664' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='data_cleaned.csv' id='data_cleaned.csv_62778701B64F4498BEA719846011A162'>
+            <properties context=''>
+              <relation connection='textscan.16hnq8606kxjn211526cs1v5bej7' name='data_cleaned.csv' table='[data_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='title' ordinal='0' />
+                  <column datatype='string' name='text' ordinal='1' />
+                  <column datatype='string' name='subject' ordinal='2' />
+                  <column datatype='date' name='date' ordinal='3' />
+                  <column datatype='integer' name='real' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_A14C4D2DB97847C990CC4A5ECE718666]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Data Analysis' type='sheet' worksheet='Articles Over Time' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Data Analysis' />
+      </command>
+    </action>
+    <action caption='Go to Details' name='[Action2_8F70D7D7659A4256AE626D3A1606C7DC]'>
+      <activation auto-clear='true' />
+      <source dashboard='Data Analysis' type='sheet' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Article Details ' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Article Details'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_cleaned' name='federated.1iz3d6j0gcn57q1beifde1qzq33u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1iz3d6j0gcn57q1beifde1qzq33u'>
+            <column caption='Article Type' datatype='string' name='[Calculation_2733685028119281664]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [real] = 0 THEN &apos;Fake&apos;&#13;&#10;ELSE &apos;Real&apos;&#13;&#10;END' />
+            </column>
+            <column caption='Topic' datatype='string' name='[Calculation_2733685028123680769]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [subject]&#13;&#10;    WHEN &apos;Government News&apos; THEN &apos;Government&apos;&#13;&#10;    WHEN &apos;left-news&apos; THEN &apos;Left News&apos;&#13;&#10;    WHEN &apos;Middle-east&apos; THEN &apos;Middle East&apos;&#13;&#10;    WHEN &apos;politics&apos; THEN &apos;Politics&apos;&#13;&#10;    WHEN &apos;politicsNews&apos; THEN &apos;Politics&apos;&#13;&#10;    WHEN &apos;US_News&apos; THEN &apos;US News&apos;&#13;&#10;    WHEN  &apos;worldnews&apos; THEN &apos;World News&apos;&#13;&#10;    ELSE &apos;Other News&apos;&#13;&#10;END' />
+            </column>
+            <column caption='&quot;&quot;' datatype='string' name='[Calculation_2935784061417861124]' role='dimension' type='nominal' user:unnamed='Sheet 4'>
+              <calculation class='tableau' formula='&quot;&quot;' />
+            </column>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_2733685028119281664]' derivation='None' name='[none:Calculation_2733685028119281664:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2733685028123680769]' derivation='None' name='[none:Calculation_2733685028123680769:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2935784061417861124]' derivation='None' name='[none:Calculation_2935784061417861124:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[text]' derivation='None' name='[none:text:nk]' pivot='key' type='nominal' />
+            <column-instance column='[title]' derivation='None' name='[none:title:nk]' pivot='key' type='nominal' />
+            <column caption='Real' datatype='integer' name='[real]' role='measure' type='quantitative' />
+            <column caption='Subject' datatype='string' name='[subject]' role='dimension' type='nominal' />
+            <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+            <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[Action (Article Type,Topic)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_8F70D7D7659A4256AE626D3A1606C7DC]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[Calculation_2733685028119281664]' member='&quot;Fake&quot;' />
+              <groupfilter function='member' level='[Calculation_2733685028123680769]' member='&quot;US News&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[Action (MONTH(Date))]'>
+            <groupfilter function='level-members' level='[tmn:date:ok]' user:ui-action-filter='[Action2_8F70D7D7659A4256AE626D3A1606C7DC]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1iz3d6j0gcn57q1beifde1qzq33u].[Action (MONTH(Date))]</column>
+            <column>[federated.1iz3d6j0gcn57q1beifde1qzq33u].[Action (Article Type,Topic)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:text:nk]' value='65' />
+            <format attr='width' value='5' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:title:nk]' value='356' />
+            <format attr='width' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:text:nk]' value='956' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#5eace8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2935784061417861124:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:date:ok] / ([federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk] / ([federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028123680769:nk] / ([federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:title:nk] / [federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:text:nk]))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{07FD29C9-F49F-4C4C-A226-359915AF52BB}' />
+    </worksheet>
+    <worksheet name='Articles Over Time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_cleaned' name='federated.1iz3d6j0gcn57q1beifde1qzq33u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1iz3d6j0gcn57q1beifde1qzq33u'>
+            <column caption='# of Real Articles' datatype='integer' name='[# of Fake Articles (copy)_2935784061414301698]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [real] = 1 THEN [text] END)' />
+            </column>
+            <column caption='# of Fake Articles' datatype='integer' name='[Calculation_2935784061413048320]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [real] = 0 THEN [text] END)' />
+            </column>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Real' datatype='integer' name='[real]' role='measure' type='quantitative' />
+            <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[# of Fake Articles (copy)_2935784061414301698]' derivation='User' name='[usr:# of Fake Articles (copy)_2935784061414301698:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_2935784061413048320]' derivation='User' name='[usr:Calculation_2935784061413048320:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[usr:# of Fake Articles (copy)_2935784061414301698:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[usr:# of Fake Articles (copy)_2935784061414301698:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[usr:Calculation_2935784061413048320:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[tmn:date:ok]' value='29' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[tmn:date:ok]' value='#4178a2' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[tmn:date:ok]' value='-90' />
+            <format attr='color' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[tmn:date:ok]' value='#ffffff' />
+            <format attr='font-weight' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[tmn:date:ok]' value='bold' />
+            <format attr='font-size' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[tmn:date:ok]' value='10' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#5eace8' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='col-width' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[:Measure Names]' value='140' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[usr:Calculation_2935784061413048320:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[:Measure Names]' />
+              <text column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[usr:Calculation_2935784061413048320:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[usr:# of Fake Articles (copy)_2935784061414301698:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[:Measure Names]' />
+              <text column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[usr:# of Fake Articles (copy)_2935784061414301698:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='bottom' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1iz3d6j0gcn57q1beifde1qzq33u].[usr:Calculation_2935784061413048320:qk] + [federated.1iz3d6j0gcn57q1beifde1qzq33u].[usr:# of Fake Articles (copy)_2935784061414301698:qk])</rows>
+        <cols>[federated.1iz3d6j0gcn57q1beifde1qzq33u].[tmn:date:ok]</cols>
+      </table>
+      <simple-id uuid='{7A793740-280C-48D3-AF8F-47A4A37E5E86}' />
+    </worksheet>
+    <worksheet name='Data Distribution Table'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_cleaned' name='federated.1iz3d6j0gcn57q1beifde1qzq33u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1iz3d6j0gcn57q1beifde1qzq33u'>
+            <column caption='Article Type' datatype='string' name='[Calculation_2733685028119281664]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [real] = 0 THEN &apos;Fake&apos;&#13;&#10;ELSE &apos;Real&apos;&#13;&#10;END' />
+            </column>
+            <column caption='Topic' datatype='string' name='[Calculation_2733685028123680769]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [subject]&#13;&#10;    WHEN &apos;Government News&apos; THEN &apos;Government&apos;&#13;&#10;    WHEN &apos;left-news&apos; THEN &apos;Left News&apos;&#13;&#10;    WHEN &apos;Middle-east&apos; THEN &apos;Middle East&apos;&#13;&#10;    WHEN &apos;politics&apos; THEN &apos;Politics&apos;&#13;&#10;    WHEN &apos;politicsNews&apos; THEN &apos;Politics&apos;&#13;&#10;    WHEN &apos;US_News&apos; THEN &apos;US News&apos;&#13;&#10;    WHEN  &apos;worldnews&apos; THEN &apos;World News&apos;&#13;&#10;    ELSE &apos;Other News&apos;&#13;&#10;END' />
+            </column>
+            <column-instance column='[__tableau_internal_object_id__].[data_cleaned.csv_62778701B64F4498BEA719846011A162]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' pivot='key' type='quantitative' />
+            <column caption='data_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[data_cleaned.csv_62778701B64F4498BEA719846011A162]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_2733685028119281664]' derivation='None' name='[none:Calculation_2733685028119281664:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2733685028123680769]' derivation='None' name='[none:Calculation_2733685028123680769:nk]' pivot='key' type='nominal' />
+            <column caption='Real' datatype='integer' name='[real]' role='measure' type='quantitative' />
+            <column caption='Subject' datatype='string' name='[subject]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[Action (MONTH(Date))]'>
+            <groupfilter function='level-members' level='[tmn:date:ok]' user:ui-action-filter='[Action1_A14C4D2DB97847C990CC4A5ECE718666]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028123680769:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' shelf='rows'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]' member-value='&quot;Real&quot;' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1iz3d6j0gcn57q1beifde1qzq33u].[Action (MONTH(Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='1' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]' value='90' />
+            <format attr='height' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028123680769:nk]' value='42' />
+            <format attr='font-size' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' value='12' />
+            <format attr='text-align' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028123680769:nk]' value='156' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]' value='12' />
+            <format attr='color' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-size' value='12' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#5eace8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' />
+              <text column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028123680769:nk]</rows>
+        <cols>[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]</cols>
+      </table>
+      <simple-id uuid='{F3A72E12-D496-4E08-B968-EA52A4867FD9}' />
+    </worksheet>
+    <worksheet name='Distribution of Real and Fake Data'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_cleaned' name='federated.1iz3d6j0gcn57q1beifde1qzq33u' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1iz3d6j0gcn57q1beifde1qzq33u'>
+            <column caption='Article Type' datatype='string' name='[Calculation_2733685028119281664]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [real] = 0 THEN &apos;Fake&apos;&#13;&#10;ELSE &apos;Real&apos;&#13;&#10;END' />
+            </column>
+            <column caption='Topic' datatype='string' name='[Calculation_2733685028123680769]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [subject]&#13;&#10;    WHEN &apos;Government News&apos; THEN &apos;Government&apos;&#13;&#10;    WHEN &apos;left-news&apos; THEN &apos;Left News&apos;&#13;&#10;    WHEN &apos;Middle-east&apos; THEN &apos;Middle East&apos;&#13;&#10;    WHEN &apos;politics&apos; THEN &apos;Politics&apos;&#13;&#10;    WHEN &apos;politicsNews&apos; THEN &apos;Politics&apos;&#13;&#10;    WHEN &apos;US_News&apos; THEN &apos;US News&apos;&#13;&#10;    WHEN  &apos;worldnews&apos; THEN &apos;World News&apos;&#13;&#10;    ELSE &apos;Other News&apos;&#13;&#10;END' />
+            </column>
+            <column-instance column='[__tableau_internal_object_id__].[data_cleaned.csv_62778701B64F4498BEA719846011A162]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' pivot='key' type='quantitative' />
+            <column caption='data_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[data_cleaned.csv_62778701B64F4498BEA719846011A162]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_2733685028119281664]' derivation='None' name='[none:Calculation_2733685028119281664:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_2733685028123680769]' derivation='None' name='[none:Calculation_2733685028123680769:nk]' pivot='key' type='nominal' />
+            <column caption='Real' datatype='integer' name='[real]' role='measure' type='quantitative' />
+            <column caption='Subject' datatype='string' name='[subject]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[Action (MONTH(Date))]'>
+            <groupfilter function='level-members' level='[tmn:date:ok]' user:ui-action-filter='[Action1_A14C4D2DB97847C990CC4A5ECE718666]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1iz3d6j0gcn57q1beifde1qzq33u].[Action (MONTH(Date))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='1' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='1' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='0' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]' value='149' />
+            <format attr='font-size' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' value='12' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]' value='12' />
+            <format attr='color' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#5eace8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Article Type:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Articles:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028123680769:nk]' />
+              <text column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Article Type:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Articles:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <text column='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Article Type:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Articles:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='top' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk] + [federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk])</rows>
+        <cols>[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028119281664:nk]</cols>
+      </table>
+      <simple-id uuid='{33D174EB-62D9-4DE6-AC97-B9DE8B3ECACB}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Article Details '>
+      <style />
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' preset-index='8' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='3' name='Article Details' w='99000' x='500' y='889'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='7' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+                <zone fixed-size='280' h='98222' id='3' is-fixed='true' name='Article Details' w='99000' x='500' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A3768AB7-A8D6-4974-81CD-50EA363E3E51}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Data Analysis'>
+      <style />
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' preset-index='8' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='11' param='horz' type-v2='layout-flow' w='99000' x='500' y='889'>
+            <zone fixed-size='1000' h='98222' id='9' is-fixed='true' type-v2='layout-basic' w='99000' x='500' y='889'>
+              <zone h='6889' id='5' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+                <zone fixed-size='56' forceUpdate='true' h='6889' id='6' is-fixed='true' type-v2='text' w='99000' x='500' y='889'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial' fontsize='16'>Identifying Fake News with NLP</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial' fontsize='12'>Dataset Analysis</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='background-color' value='#4178a2' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='91333' id='7' param='horz' type-v2='layout-flow' w='99000' x='500' y='7778'>
+                <zone fixed-size='1122' h='91333' id='18' is-fixed='true' param='vert' type-v2='layout-flow' w='70125' x='500' y='7778'>
+                  <zone h='91333' id='8' name='Articles Over Time' w='70125' x='500' y='7778'>
+                    <layout-cache cell-count-w='35' minheight='264' non-cell-size-w='1' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='91333' id='13' param='vert' type-v2='layout-flow' w='28875' x='70625' y='7778'>
+                  <zone h='43777' id='14' name='Distribution of Real and Fake Data' w='28875' x='70625' y='7778'>
+                    <layout-cache minheight='170' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='71' h='8778' id='15' is-fixed='true' name='Distribution of Real and Fake Data' pane-specification-id='1' param='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028123680769:nk]' show-title='false' type-v2='color' w='28875' x='70625' y='51555'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='341' h='38778' id='16' is-fixed='true' name='Data Distribution Table' w='28875' x='70625' y='60333'>
+                    <layout-cache type-h='cell' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='7556' id='12' leg-item-layout='vert' name='Articles Over Time' pane-specification-id='2' param='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[:Measure Names]' show-title='false' type-v2='color' w='7938' x='3125' y='13778' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='26' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='25' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+                <zone fixed-size='56' forceUpdate='true' h='6889' id='6' type-v2='text' w='99000' x='500' y='889'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial' fontsize='16'>Identifying Fake News with NLP</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial' fontsize='12'>Dataset Analysis</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#4178a2' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91333' id='8' is-fixed='true' name='Articles Over Time' w='70125' x='500' y='7778'>
+                  <layout-cache cell-count-w='35' minheight='264' non-cell-size-w='1' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7556' id='12' leg-item-layout='vert' name='Articles Over Time' pane-specification-id='2' param='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[:Measure Names]' show-title='false' type-v2='color' w='7938' x='3125' y='13778'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43777' id='14' is-fixed='true' name='Distribution of Real and Fake Data' w='28875' x='70625' y='7778'>
+                  <layout-cache minheight='170' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='71' h='8778' id='15' name='Distribution of Real and Fake Data' pane-specification-id='1' param='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028123680769:nk]' show-title='false' type-v2='color' w='28875' x='70625' y='51555'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38778' id='16' is-fixed='true' name='Data Distribution Table' w='28875' x='70625' y='60333'>
+                  <layout-cache type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{26696D79-D179-4561-9455-610F09249082}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' name='Data Analysis'>
+      <viewpoints>
+        <viewpoint name='Articles Over Time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Data Distribution Table'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Distribution of Real and Fake Data'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{F558866D-295F-4B5F-8937-FE175AC0AA0C}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Article Details '>
+      <viewpoints>
+        <viewpoint name='Article Details'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{E0A5632E-06E1-43E0-925F-19D43BB8E047}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Article Details'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{66A1414F-34A1-480A-9111-367FC2DC26B5}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Articles Over Time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{307FE02D-9A76-4AED-957B-D01E483863D0}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Data Distribution Table'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='238'>
+            <card pane-specification-id='0' param='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[__tableau_internal_object_id__].[cnt:data_cleaned.csv_62778701B64F4498BEA719846011A162:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5CE33DF0-286E-402C-B2D4-BD9FB7F59130}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Distribution of Real and Fake Data'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='238'>
+            <card pane-specification-id='1' param='[federated.1iz3d6j0gcn57q1beifde1qzq33u].[none:Calculation_2733685028123680769:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C95406B2-39C0-487A-BDDD-0DC1ECE20B24}' />
+    </window>
+  </windows>
+</workbook>
