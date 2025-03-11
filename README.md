@@ -40,6 +40,13 @@ Confusion Matrix: A visual representation of classification performance will be 
 Accuracy Over Time: A graph showing the change in accuracy as different optimization techniques are applied.
 Additionally, the results will be compared with a baseline model to demonstrate the effectiveness of the optimizations and the machine learning model in predicting real vs. fake news.
 
+<img width="587" alt="Screenshot 2025-03-10 at 7 07 47 PM" src="https://github.com/user-attachments/assets/c748563b-6b69-4504-9f54-300859857771" />
+
+<img width="1023" alt="Screenshot 2025-03-10 at 7 08 04 PM" src="https://github.com/user-attachments/assets/ca2112ed-1eaa-4b2e-a17f-6ad84cf900da" />
+
+
 References
+https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets
+https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification
 ChatGPT
 XPERTLearning Assistant
