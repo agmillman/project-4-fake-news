@@ -1,14 +1,21 @@
 # project-4-fake-news
 
-Real News vs. Fake News
+# Group
+- Michael Ezeanioma
+- Elizabeth Jones
+- Xiaolong Liu
+- Andrew Millman
+- John Sebesta
 
-Overview
+# Real News vs. Fake News
+
+# Overview
 
 In the age of digital information, distinguishing between real news and fake news has become a significant challenge. This project aims to solve this problem using machine learning (ML) techniques, leveraging various technologies such as Python, Scikit-learn, and other data analysis and visualization tools. By utilizing a dataset that includes both real and fake news articles, our goal is to build a machine learning model that can predict whether a given news article is real or fake.
 
 The project will clean and preprocess the data, apply a machine learning model, and then optimize it to maximize prediction accuracy. The results will be evaluated based on classification accuracy or R-squared metrics. To visualize the data and present the results, technologies like Python Pandas, Matplotlib, and possibly Tableau will be used.
 
-Methodology
+# Methodology
 
 1. Data Collection:
 The dataset used in this project contains at least 100 records, each corresponding to a news article labeled as either "real" or "fake." The dataset will be sourced from publicly available datasets on platforms like Kaggle or UCI Machine Learning Repository.
@@ -31,7 +38,7 @@ To enhance model performance, hyperparameter tuning will be performed using Grid
 5. Data Visualization:
 The results will be visualized using Python Matplotlib or JavaScript Plotly to represent model performance and dataset features. The goal is to make the data and results comprehensible to both technical and non-technical stakeholders.
 
-Results
+# Results
 
 Upon completion of model training and evaluation, we will present the following key results:
 
